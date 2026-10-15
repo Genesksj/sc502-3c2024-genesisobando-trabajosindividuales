@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Formulario de Registro</h1>
+    <p>Por favor, complete este formulario con la información requerida.</p>
+
+    <form action="https://register-demo.freecodecamp.org" method="post">
+
+        <fieldset>
+            <label for="nombre">Nombre:
+                <input type="text" id="nombre" name="nombre" required>
+            </label>
+
+            <label for="apellido">Apellido:
+                <input type="text" id="apellido" name="apellido" required>
+            </label>
+
+            <label for="correo">Correo electrónico:
+                <input type="email" id="correo" name="correo" required>
+            </label>
+
+            <label for="contrasena">Contraseña:
+                <input type="password" id="contrasena"
+                       name="contrasena" minlength="8"
+                       pattern="[a-z0-5]{8,}" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tipo de cuenta</legend>
+
+            <label for="personal">
+                <input type="radio" class="inline" id="personal"
+                       name="cuenta" value="personal" checked>
+                Personal
+            </label>
+
+            <label for="empresarial">
+                <input type="radio" class="inline" id="empresarial"
+                       name="cuenta" value="empresarial">
+                Empresarial
+            </label>
+
+            <label for="terminos">
+                <input type="checkbox" class="inline" id="terminos"
+                       name="terminos" required>
+                Acepto los
+                <a href="https://www.freecodecamp.org/news/terms-of-service/">
+                    términos y condiciones
+                </a>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información adicional</legend>
+
+            <label for="foto">Foto de perfil:
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </label>
+
+            <label for="edad">Edad:
+                <input type="number" id="edad"
+                       name="edad" min="13" max="120">
+            </label>
+
+            <label for="referencia">¿Cómo conoció nuestra página?
+                <select id="referencia" name="referencia">
+                    <option value="">Seleccione una opción</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+
+            <label for="biografia">Biografía:
+                <textarea id="biografia" name="biografia"
+                          rows="3" cols="30"
+                          placeholder="Escriba sobre usted..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Registrarse">
+
+    </form>
+
+</body>
+</html>

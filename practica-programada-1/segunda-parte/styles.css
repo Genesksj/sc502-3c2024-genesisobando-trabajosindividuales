@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef5fa;
+    color: #333;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2471a3;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #aed6f1;
+}
+
+/* Perfil del doctor */
+.perfil {
+    background-color: white;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+.nombre {
+    color: #2471a3;
+}
+
+.especialidad {
+    color: #5499c7;
+    font-size: 20px;
+}
+
+#descripcion {
+    line-height: 1.6;
+}
+
+/* Botón */
+.boton {
+    display: inline-block;
+    background-color: #2471a3;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.boton:hover {
+    background-color: #154360;
+}
+
+/* Comentarios */
+#servicios {
+    text-align: center;
+    padding: 20px;
+}
+
+.comentarios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #d6eaf8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 230px;
+    box-shadow: 0 2px 5px #dddddd;
+}
+
+.tarjeta h3 {
+    color: #2471a3;
+}
+
+/* Contacto */
+#contacto {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+}
