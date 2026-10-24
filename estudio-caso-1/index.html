@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registro de Estudiantes</h1>
+        <p>Control de notas de estudiantes</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Agregar estudiante</h2>
+
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos">
+
+                <label for="nota">Nota:</label>
+                <input type="number" id="nota" min="0" max="100">
+
+                <button type="submit">Agregar estudiante</button>
+            </form>
+
+            <p id="mensaje"></p>
+        </section>
+
+        <section>
+            <h2>Lista de estudiantes</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody id="listaEstudiantes">
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Resumen de notas</h2>
+            <p id="mayorNota"></p>
+            <p id="promedio"></p>
+            <p id="menorNota"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
