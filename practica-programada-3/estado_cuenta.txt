@@ -1,0 +1,12 @@
+ESTADO DE CUENTA - TARJETA DE CREDITO
+--------------------------------------
+ID: 1 | Compra de supermercado | ₡25,000.00
+ID: 2 | Compra de libros | ₡12,000.00
+ID: 3 | Pago de internet | ₡18,000.00
+ID: 4 | Compra de ropa | ₡15,000.00
+--------------------------------------
+Total de contado: ₡70,000.00
+Interes (2.6%): ₡1,820.00
+Total con interes: ₡71,820.00
+Cashback (0.1%): ₡70.00
+Monto final a pagar: ₡71,750.00
